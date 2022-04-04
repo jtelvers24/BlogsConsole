@@ -1,0 +1,11 @@
+2022-03-28 12:45:38.1490|INFO|BlogsConsole.Program|Program started
+2022-03-28 12:45:38.2253|INFO|BlogsConsole.Program|Program ended
+2022-03-28 13:11:18.6570|INFO|BlogsConsole.Program|Program started
+2022-03-28 13:11:35.1298|INFO|BlogsConsole.Program|Blog added - "Test Blog"
+2022-03-28 13:11:35.4666|INFO|BlogsConsole.Program|Program ended
+2022-03-28 13:17:40.0123|INFO|BlogsConsole.Program|Program started
+2022-03-28 13:17:47.2768|ERROR|BlogsConsole.Program|Value cannot be null. (Parameter 'connectionString')
+2022-03-28 13:17:47.2803|INFO|BlogsConsole.Program|Program ended
+2022-03-28 13:19:40.1908|INFO|BlogsConsole.Program|Program started
+2022-03-28 13:19:44.4617|INFO|BlogsConsole.Program|Blog added - "test 2"
+2022-03-28 13:19:44.8036|INFO|BlogsConsole.Program|Program ended
