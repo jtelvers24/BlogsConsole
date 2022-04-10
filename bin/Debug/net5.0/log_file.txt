@@ -53,3 +53,6 @@
 2022-04-10 11:41:17.1780|INFO|BlogsConsole.Program|Program started
 2022-04-10 11:41:31.6617|INFO|BlogsConsole.Program|Post added - lsfjalsfjlasdfjlsfjslfj
 2022-04-10 11:41:31.6665|INFO|BlogsConsole.Program|Program ended
+2022-04-10 11:48:37.7888|INFO|BlogsConsole.Program|Program started
+2022-04-10 11:48:46.6495|INFO|BlogsConsole.Program|1 Posts Returned
+2022-04-10 11:48:46.6540|INFO|BlogsConsole.Program|Program ended

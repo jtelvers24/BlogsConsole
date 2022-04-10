@@ -53,6 +53,37 @@ namespace BlogsConsole
                 
             }
 
+            public void ReadPosts()
+            {
+                var db = new BloggingContext();
+                Console.WriteLine("Select the blog you would like to view the posts of");
+                var query = db.Blogs.OrderBy(b => b.BlogId);
+                Console.WriteLine("0) Display all posts");
+                foreach (var item in query)
+                {
+                    Console.WriteLine(item.BlogId.ToString() + ") " + item.Name);
+                    }
+                var option = Int32.Parse(Console.ReadLine());
+                if(option == 0){
+                    var order = db.Posts.OrderBy(b => b.BlogId);
+                    foreach(Post p in order){
+                        p.Blog.Name = db.Blogs.Find(p.BlogId).Name;
+                
+                          Console.WriteLine(p.Display());
+                        }
+                        logger.Info($"{db.Posts.Count()} posts returned");
+                    }
+                    
+                
+                else{
+               foreach(Post p in db.Posts.Where(p => option.Equals(p.BlogId))){
+                   p.Blog.Name = db.Blogs.Find(option).Name;
+                       Console.WriteLine(p.Display());
+                    }
+                    logger.Info($"{db.Posts.Where(p => option.Equals(p.BlogId)).Count()} Posts Returned");
+                    
+                }
+            }
         }
         class Blogs
         {
@@ -114,6 +145,10 @@ namespace BlogsConsole
                 }else if(selection == "3"){
                     Posts newCreate = new Posts();
                     newCreate.AddPost();
+                }else if(selection == "4")
+                {
+                    Posts newCreate = new Posts();
+                    newCreate.ReadPosts();
                 }
 
                 

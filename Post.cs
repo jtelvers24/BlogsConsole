@@ -8,5 +8,15 @@ namespace BlogsConsole
 
         public int BlogId { get; set; }
         public Blog Blog { get; set; }
+
+ public string Display(){
+            return $"Blog Id: {BlogId}/nBlog: {Blog.Name}/nTitle: {Title}/nContent:{Content}/n";
+        }
+        public Post(){
+            Blog = new Blog();
+        }
+
+       
+
     }
 }
