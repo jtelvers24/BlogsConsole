@@ -47,3 +47,9 @@
 2022-04-10 10:44:55.3741|INFO|BlogsConsole.Program|Program ended
 2022-04-10 10:45:02.8953|INFO|BlogsConsole.Program|Program started
 2022-04-10 10:45:05.8903|INFO|BlogsConsole.Program|Program ended
+2022-04-10 11:40:51.0414|INFO|BlogsConsole.Program|Program started
+2022-04-10 11:41:02.7512|ERROR|BlogsConsole.Program|Input string was not in a correct format.
+2022-04-10 11:41:02.7617|INFO|BlogsConsole.Program|Program ended
+2022-04-10 11:41:17.1780|INFO|BlogsConsole.Program|Program started
+2022-04-10 11:41:31.6617|INFO|BlogsConsole.Program|Post added - lsfjalsfjlasdfjlsfjslfj
+2022-04-10 11:41:31.6665|INFO|BlogsConsole.Program|Program ended

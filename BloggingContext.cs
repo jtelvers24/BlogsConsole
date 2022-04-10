@@ -7,12 +7,16 @@ namespace BlogsConsole
     {
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
-
+        public void AddPost(Blog blog, Post post){
+            blog.Posts.Add(post);
+            this.SaveChanges();
+        }
         public void AddBlog(Blog blog)
         {
             this.Blogs.Add(blog);
             this.SaveChanges();
         }
+        
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

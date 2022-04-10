@@ -9,9 +9,51 @@ namespace BlogsConsole
 {
     class Program
     {
-        // create static instance of Logger
         private static NLog.Logger logger = NLogBuilder.ConfigureNLog(Directory.GetCurrentDirectory() + "//nlog.config").GetCurrentClassLogger();
 
+
+        class Posts
+        {
+            public void AddPost()
+            {
+                   var db = new BloggingContext();
+                Console.WriteLine("Select the blog you would like to post to:");
+
+                var query = db.Blogs.OrderBy(b => b.BlogId);
+                foreach (var item in query)
+                {
+                    Console.WriteLine(item.BlogId.ToString() + ") " + item.Name);
+                    }
+                    
+                var option = Int32.Parse(Console.ReadLine());
+                if(option.Equals(typeof(string))){
+                    logger.Error("Not a valid integer for blog");
+                } 
+                else if(option != db.Blogs.Find(option).BlogId){
+                    logger.Error("Blog not found with that Blog Id");
+                }
+
+                else{
+                
+                Console.WriteLine($"Please enter title");
+                var title = Console.ReadLine();
+                if(title.Length == 0){
+                    logger.Error("Post title cannot be null");
+                }
+                else{
+                    Console.WriteLine("Please enter content of post");
+                    var content = Console.ReadLine();
+                    var post = new Post{ Title = title, Content = content};
+                    db.AddPost(db.Blogs.Find(option), post);
+                      
+                    logger.Info($"Post added - {content}");
+                }
+                }
+
+                
+            }
+
+        }
         class Blogs
         {
             public void RunReadBlog()
@@ -69,8 +111,9 @@ namespace BlogsConsole
                 }else if(selection == "2"){
                   Blogs newCreate = new Blogs();
                   newCreate.RunCreateBlog();
-                }else{
-                    Console.WriteLine("Selection not found or Selection has not been created");
+                }else if(selection == "3"){
+                    Posts newCreate = new Posts();
+                    newCreate.AddPost();
                 }
 
                 
