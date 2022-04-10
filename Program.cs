@@ -11,17 +11,48 @@ namespace BlogsConsole
     {
         // create static instance of Logger
         private static NLog.Logger logger = NLogBuilder.ConfigureNLog(Directory.GetCurrentDirectory() + "//nlog.config").GetCurrentClassLogger();
+
+        class Blogs
+        {
+            public void RunReadBlog()
+            {
+
+                var db = new BloggingContext();
+
+                var query = db.Blogs.OrderBy(b => b.Name);
+
+                Console.WriteLine("All blogs in the database:");
+
+                 foreach (var item in query)
+                {
+                    Console.WriteLine(item.Name);
+                }
+            }
+
+            public void RunCreateBlog()
+            {
+               Console.Write("Enter a name for a new Blog: ");
+                var name = Console.ReadLine();
+
+                var blog = new Blog { Name = name };
+
+                var db = new BloggingContext();
+                db.AddBlog(blog);
+                logger.Info("Blog added - {name}", name);
+            }
+
+
+
+        }
+
         static void Main(string[] args)
         {
             logger.Info("Program started");
 
             try
             {
-                var name = Console.ReadLine();
-
-                var blog = new Blog { Name = name };
-
-                var db = new BloggingContext();
+                
+                
 
                 Console.WriteLine("1. Display all blogs");
                 Console.WriteLine("2. Add Blog");
@@ -30,18 +61,14 @@ namespace BlogsConsole
                 string selection = Console.ReadLine();
 
                 if(selection == "1"){
-                    var query = db.Blogs.OrderBy(b => b.Name);
+                    Blogs newCreate = new Blogs();
+                    newCreate.RunReadBlog();
 
-                Console.WriteLine("All blogs in the database:");
-                foreach (var item in query)
-                {
-                    Console.WriteLine(item.Name);
-                }
-                }else if(selection == "2"){
-                    Console.Write("Enter a name for a new Blog: ");
                 
-                db.AddBlog(blog);
-                logger.Info("Blog added - {name}", name);
+               
+                }else if(selection == "2"){
+                  Blogs newCreate = new Blogs();
+                  newCreate.RunCreateBlog();
                 }else{
                     Console.WriteLine("Selection not found or Selection has not been created");
                 }

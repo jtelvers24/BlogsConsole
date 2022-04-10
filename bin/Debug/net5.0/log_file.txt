@@ -9,3 +9,41 @@
 2022-03-28 13:19:40.1908|INFO|BlogsConsole.Program|Program started
 2022-03-28 13:19:44.4617|INFO|BlogsConsole.Program|Blog added - "test 2"
 2022-03-28 13:19:44.8036|INFO|BlogsConsole.Program|Program ended
+2022-04-04 10:10:36.1438|INFO|BlogsConsole.Program|Program started
+2022-04-04 10:11:01.6622|INFO|BlogsConsole.Program|Program ended
+2022-04-04 10:20:21.5635|INFO|BlogsConsole.Program|Program started
+2022-04-04 10:20:30.8934|INFO|BlogsConsole.Program|Program ended
+2022-04-04 10:22:29.4630|INFO|BlogsConsole.Program|Program started
+2022-04-04 10:22:33.0696|INFO|BlogsConsole.Program|Program ended
+2022-04-04 10:23:04.9822|INFO|BlogsConsole.Program|Program started
+2022-04-04 10:23:07.0371|INFO|BlogsConsole.Program|Program ended
+2022-04-04 10:24:00.2696|INFO|BlogsConsole.Program|Program started
+2022-04-04 10:24:05.9381|INFO|BlogsConsole.Program|Program ended
+2022-04-04 10:24:22.3260|INFO|BlogsConsole.Program|Program started
+2022-04-04 10:24:28.8432|INFO|BlogsConsole.Program|Program ended
+2022-04-04 10:25:17.2050|INFO|BlogsConsole.Program|Program started
+2022-04-04 10:25:31.6307|INFO|BlogsConsole.Menu|Blog added - ""
+2022-04-04 10:31:28.0574|INFO|BlogsConsole.Program|Program started
+2022-04-04 10:31:56.0323|INFO|BlogsConsole.Program|Program ended
+2022-04-04 10:33:09.4860|INFO|BlogsConsole.Program|Program started
+2022-04-04 10:33:21.4286|INFO|BlogsConsole.Menu|Blog added - "hello"
+2022-04-10 10:25:50.2949|INFO|BlogsConsole.Program|Program started
+2022-04-10 10:25:59.8916|INFO|BlogsConsole.Program|Blog added - ""
+2022-04-10 10:25:59.9041|INFO|BlogsConsole.Program|Program ended
+2022-04-10 10:26:13.1450|INFO|BlogsConsole.Program|Program started
+2022-04-10 10:26:19.4956|INFO|BlogsConsole.Program|Program ended
+2022-04-10 10:26:34.2209|INFO|BlogsConsole.Program|Program started
+2022-04-10 10:26:37.3362|INFO|BlogsConsole.Program|Blog added - ""
+2022-04-10 10:26:37.3484|INFO|BlogsConsole.Program|Program ended
+2022-04-10 10:27:44.0166|INFO|BlogsConsole.Program|Program started
+2022-04-10 10:27:58.0697|INFO|BlogsConsole.Program|Blog added - "john"
+2022-04-10 10:27:58.0801|INFO|BlogsConsole.Program|Program ended
+2022-04-10 10:28:09.7625|INFO|BlogsConsole.Program|Program started
+2022-04-10 10:28:13.6736|INFO|BlogsConsole.Program|Program ended
+2022-04-10 10:44:36.2799|INFO|BlogsConsole.Program|Program started
+2022-04-10 10:44:39.3943|INFO|BlogsConsole.Program|Program ended
+2022-04-10 10:44:46.9822|INFO|BlogsConsole.Program|Program started
+2022-04-10 10:44:55.3629|INFO|BlogsConsole.Program|Blog added - "John"
+2022-04-10 10:44:55.3741|INFO|BlogsConsole.Program|Program ended
+2022-04-10 10:45:02.8953|INFO|BlogsConsole.Program|Program started
+2022-04-10 10:45:05.8903|INFO|BlogsConsole.Program|Program ended
